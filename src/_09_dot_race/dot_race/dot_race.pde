@@ -5,11 +5,15 @@ int x2=50;
 int x3=50;
 int x4=50;
 int x5=50;
+int x6=50;
+int x7=50;
 int y1=6;
 int y2=34;
 int y3=62;
 int y4=90;
 int y5=118;
+int y6=146;
+int y7=174;
 void setup() {
   finishline=loadImage ("images.png");
   size(1000, 200);
@@ -22,6 +26,8 @@ x2=x2+(int)random(0,10);
 x3=x3+(int)random(0,10);
 x4=x4+(int)random(0,10);
 x5=x5+(int)random(0,10);
+x6=x6+(int)random(0,10);
+x7=x7+(int)random(0,10);
 
   background(#121076);
   image(finishline,950,0);
@@ -40,6 +46,8 @@ fill(#00B0FF);
  ellipse (x3,y3,10,10);
  ellipse (x4,y4,10,10);
  ellipse (x5,y5,10,10);
+ ellipse (x6,y6,10,10);
+ ellipse (x7,y7,10,10);
   //6. Use the playSound() method to play a ding when your dot crosses the finish line.
 if (x1>=1000){
   playSound();
